@@ -9,6 +9,7 @@ alias ls='ls -aF'
 alias refresh='source ~/.zshrc'
 alias showFiles='defaults write com.apple.finder AppleShowAllFiles TRUE'
 alias hideFiles='defaults write com.apple.finder AppleShowAllFiles FALSE'
+alias upDots='cp ~/.zshrc ~/.dotfiles && cp ~/.oh-my-zsh/custom/aliases.zsh ~/.dotfiles && cp ~/.oh-my-zsh/custom/prompt.zsh ~/.dotfiles/'
 
 # Applications
 alias ffdev='open -a FirefoxDeveloperEdition'
@@ -30,3 +31,4 @@ alias airport='open -a AirPort\ Utility'
 alias zconfig='subl ~/.zshrc'
 alias zalias='subl ~/.oh-my-zsh/custom/aliases.zsh'
 alias zprompt='subl ~/.oh-my-zsh/custom/prompt.zsh'
+alias dotfiles='~/.dotfiles/'
