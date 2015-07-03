@@ -1,5 +1,5 @@
 #
-# shell aliases
+# Shell aliases
 #
 
 # Commands
@@ -29,4 +29,4 @@ alias airport='open -a AirPort\ Utility'
 alias zconfig='subl ~/.zshrc'
 alias zalias='subl ~/.oh-my-zsh/custom/aliases.zsh'
 alias zprompt='subl ~/.oh-my-zsh/custom/prompt.zsh'
-alias dotfiles='~/.dotfiles/'
+alias dots='~/.dotfiles/'
