@@ -7,7 +7,7 @@ alias ls='ls -aF'
 alias refresh='source ~/.zshrc'
 alias showFiles='defaults write com.apple.finder AppleShowAllFiles TRUE'
 alias hideFiles='defaults write com.apple.finder AppleShowAllFiles FALSE'
-alias upDots='cp ~/.zshrc ~/.dotfiles && cp ~/.oh-my-zsh/custom/aliases.zsh ~/.dotfiles && cp ~/.oh-my-zsh/custom/prompt.zsh ~/.dotfiles && cp ~/Library/Application\ Support/Sublime\ Text\ 2/Packages/User/Preferences.sublime-settings ~/.dotfiles && git add ~/.dotfiles/* && git commit ~/.dotfiles/ -m "auto updating config files" && git push'
+alias upDots='cp ~/.zshrc ~/.dotfiles/.zsh && cp ~/.oh-my-zsh/custom/aliases.zsh ~/.dotfiles/.zsh && cp ~/.oh-my-zsh/custom/prompt.zsh ~/.dotfiles/.zsh && cp ~/Library/Application\ Support/Sublime\ Text\ 2/Packages/User/Preferences.sublime-settings ~/.dotfiles/.sublime && git add ~/.dotfiles/* && git commit ~/.dotfiles/ -m "auto updating config files" && git push'
 
 # Applications
 alias ffdev='open -a FirefoxDeveloperEdition'
