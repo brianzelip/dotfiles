@@ -54,6 +54,8 @@ export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/git/bin"
 
 source $ZSH/oh-my-zsh.sh
 
+source $HOME/.rvm/scripts/rvm
+
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
 
@@ -87,3 +89,5 @@ source $ZSH/custom/prompt.zsh
 
 export NVM_DIR="/Users/brianzelip/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+
+export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
