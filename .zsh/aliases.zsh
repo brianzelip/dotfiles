@@ -23,6 +23,7 @@ alias dash='open -a Dash'
 alias weka='open -a weka-3-6-12-oracle-jvm'
 alias rstudio='open -a RStudio'
 alias airport='open -a AirPort\ Utility'
+alias torrent='open -a Transmission'
 
 
 # Files
