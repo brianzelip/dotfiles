@@ -25,6 +25,10 @@ alias rstudio='open -a RStudio'
 alias airport='open -a AirPort\ Utility'
 alias torrent='open -a Transmission'
 alias xld='open -a XLD'
+alias atom='open -a Atom'
+alias protege='sh /Applications/Protege-5.0.0-beta-24/run.command'
+alias vlc='open -a VLC'
+alias audacity='open -a Audacity'
 
 
 # Files

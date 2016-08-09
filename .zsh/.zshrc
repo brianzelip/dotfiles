@@ -49,7 +49,7 @@ plugins=(git)
 
 # User configuration
 
-export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/git/bin"
+export PATH=$PATH:"/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/git/bin"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 source $ZSH/oh-my-zsh.sh
@@ -84,8 +84,17 @@ source $HOME/.rvm/scripts/rvm
 # Setting personal aliases by sourcing my aliases file
 source $ZSH/custom/aliases.zsh
 
-#Setting custom PROMPT by sourcing my propmt file
+# Setting custom PROMPT by sourcing my propmt file
 source $ZSH/custom/prompt.zsh
+
+# Setting default EDITOR as discussed in [this post]
+# (http://linuxg.net/how-to-change-the-default-editor-in-linux/)
+export EDITOR=/usr/local/bin/Atom
+export VISUAL=/usr/local/bin/Atom
+
+# Autoloading Zshell's `zmv` utility for renaming files and dirs
+# as mentioned in this post: http://unix.stackexchange.com/a/78961
+autoload -U zmv
 
 export NVM_DIR="/Users/brianzelip/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
