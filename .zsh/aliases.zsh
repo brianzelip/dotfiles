@@ -29,7 +29,7 @@ alias atom='open -a Atom'
 alias protege='sh /Applications/Protege-5.0.0-beta-24/run.command'
 alias vlc='open -a VLC'
 alias audacity='open -a Audacity'
-
+alias slack='open -a Slack'
 
 # Files
 alias zconfig='subl ~/.zshrc'
