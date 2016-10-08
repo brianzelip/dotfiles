@@ -7,7 +7,7 @@ alias ls='ls -aF'
 alias refresh='source ~/.zshrc'
 alias showFiles='defaults write com.apple.finder AppleShowAllFiles TRUE'
 alias hideFiles='defaults write com.apple.finder AppleShowAllFiles FALSE'
-alias upDots='cd ~/.dotfiles/ && cp ~/.hyper.js ./.hyper/ && cp ~/.zshrc ./.zsh/ && cp ~/.oh-my-zsh/custom/aliases.zsh ./.zsh && cp ~/.oh-my-zsh/custom/prompt.zsh ./.zsh/ && cp ~/Library/Application\ Support/Sublime\ Text\ 2/Packages/User/Preferences.sublime-settings ./.sublime/ && cp ~/.emmet/snippets.json ./.emmet/ && git add -A && git commit -m "auto updating config files" && git push && echo "\n dotfiles updated and pushed to remote!"'
+alias upDots='cd ~/.dotfiles/ && cp ~/.hyper.js ./.hyper/ && cp ~/.zshrc ./.zsh/ && cp ~/.oh-my-zsh/custom/aliases.zsh ./.zsh && cp ~/.oh-my-zsh/custom/prompt.zsh ./.zsh/ && cp ~/Library/Application\ Support/Sublime\ Text\ 2/Packages/User/Preferences.sublime-settings ./.sublime/ && cp ~/.emmet/snippets.json ./.emmet/ && git add -A && git commit -m "auto updating config files" && git push && echo "\n .dotfiles updated and pushed to remote!"'
 
 # Applications
 alias ffdev='open -a FirefoxDeveloperEdition'
