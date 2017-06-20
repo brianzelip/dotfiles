@@ -1,13 +1,12 @@
-{ 
+{
   "html": {
     "filters": "html",
     "profile": "html",
     "snippets": {
-      "!": "<!DOCTYPE html>\n<html lang=\"en-US\">\n\n\t<head>\n\t\t<meta charset=\"UTF-8\">\n\t\t<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n\t\t<meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge,chrome=1\">\n\t\t<link rel=\"stylesheet\" href=\"https://npmcdn.com/basscss@7.1.1/css/basscss.min.css\">\n\t\t<title>${1:TITLE}</title>\n\t\t<meta name=\"description\" content=\"\">\n\t\t<meta name=\"author\" content=\"Brian Zelip\">\n\t\t<meta name=\"keywords\" content=\"\">\n\t</head>\n\n\t<body>\n\n\t\t\n\n\t</body>\n\n</html>\n"
+      "!": "<!DOCTYPE html>\n<html lang=\"en-US\">\n\n\t<head>\n\t\t<meta charset=\"UTF-8\">\n\t\t<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n\t\t<meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge,chrome=1\">\n\t\t<link rel=\"stylesheet\" href=\"https://unpkg.com/basscss@7.1.1/css/basscss.min.css\">\n\t\t<title>${1:TITLE}</title>\n\t\t<meta name=\"description\" content=\"\">\n\t\t<meta name=\"author\" content=\"Brian Zelip\">\n\t\t<meta name=\"keywords\" content=\"\">\n\t</head>\n\n\t<body>\n\n\t\t\n\n\t</body>\n\n</html>\n"
     },
     "abbreviations": {
-      "scripts": "<script src=\"\">",
-      "basscss": "<link href='http://d2v52k3cl9vedd.cloudfront.net/basscss/7.0.4/basscss.min.css' rel='stylesheet'/>"
+      "scripts": "<script src=\"\">"
     }
   }
 }
