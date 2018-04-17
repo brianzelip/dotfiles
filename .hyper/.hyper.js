@@ -61,7 +61,10 @@ module.exports = {
 
     // the shell to run when spawning a new session (i.e. /usr/local/bin/fish)
     // if left empty, your system's login shell will be used by default
-    shell: ''
+    shell: '',
+
+    // for Cobalt2 theme
+    wickedBorder: false
 
     // for advanced config flags please refer to https://hyperterm.org/#cfg
   },

@@ -1,6 +1,6 @@
 PROMPT='
 %{$fg[gray]%}┄
-%{$fg[red]%}%n%{$reset_color%} in %{$fg_bold[red]%}%~%{$reset_color%} $(git_prompt_info)
+%{$fg[gray]%}%n in %{$fg[red]%}%~%{$reset_color%} $(git_prompt_info)
 
 %{$fg[red]%}➞%{$reset_color%} '
 
