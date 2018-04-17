@@ -10,6 +10,10 @@ ZSH_THEME="macovsky"
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
 
+# Uncomment the following line to use hyphen-insensitive completion. Case
+# sensitive completion must be off. _ and - will be interchangeable.
+# HYPHEN_INSENSITIVE="true"
+
 # Uncomment the following line to disable bi-weekly auto-update checks.
 # DISABLE_AUTO_UPDATE="true"
 
@@ -48,8 +52,12 @@ ZSH_THEME="macovsky"
 plugins=(git)
 
 # User configuration
+export PATH="$PATH:/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin:/usr/local/git/bin"
 
-export PATH=$PATH:"/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/git/bin"
+# Add ~/WebProjects/HNupvotes to $PATH - see ReadMe.txt in that dir
+# to understand why.
+export PATH="$PATH:/Users/brianzelip/WebProjects/HNupvotes"
+
 # export MANPATH="/usr/local/man:$MANPATH"
 
 source $ZSH/oh-my-zsh.sh
@@ -87,18 +95,14 @@ source $ZSH/custom/aliases.zsh
 # Setting custom PROMPT by sourcing my propmt file
 source $ZSH/custom/prompt.zsh
 
-# Setting default EDITOR as discussed in [this post]
-# (http://linuxg.net/how-to-change-the-default-editor-in-linux/)
-export EDITOR=/usr/local/bin/Atom
-export VISUAL=/usr/local/bin/Atom
+# Setting EDITOR to ~~Atom~~ Code as explained here,
+# http://linuxg.net/how-to-change-the-default-editor-in-linux/
+export EDITOR=/usr/local/bin/code
+export VISUAL=/usr/local/bin/code
 
-# Autoloading Zshell's `zmv` utility for renaming files and dirs
-# as mentioned in this post: http://unix.stackexchange.com/a/78961
-autoload -U zmv
-
+# The following 2 lines automatically source NVM at login
+# via https://github.com/creationix/nvm
 export NVM_DIR="/Users/brianzelip/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
-
-export PATH="$PATH:$HOME/.yarn/bin" # npm alternative
