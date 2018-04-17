@@ -1,16 +1,17 @@
 module.exports = {
   config: {
     // default window size in pixels
-    windowSize: [600, 350],
+    windowSize: [825, 450],
 
     // default font size in pixels for all tabs
     fontSize: 16,
 
     // font family with optional fallbacks
-    fontFamily: '"PT Mono", Menlo, "DejaVu Sans Mono", "Lucida Console", monospace',
+    fontFamily:
+      '"PT Mono", Menlo, "DejaVu Sans Mono", "Lucida Console", monospace',
 
     // terminal cursor background color and opacity (hex, rgb, hsl, hsv, hwb or cmyk)
-    cursorColor: 'rgb(93,114,122)',// might be overriden by a plugin
+    cursorColor: 'rgb(93,114,122)', // might be overriden by a plugin
 
     // `BEAM` for |, `UNDERLINE` for _, `BLOCK` for █
     cursorShape: 'UNDERLINE',
@@ -28,7 +29,7 @@ module.exports = {
     css: '',
 
     // custom css to embed in the terminal window
-    termCSS: '',
+    termCSS: '.cursor-node{height:16px !important}', // add via https://github.com/zeit/hyper/issues/1803#issuecomment-300327454
 
     // custom padding (css format, i.e.: `top right bottom left`)
     padding: '12px 14px',
@@ -60,7 +61,7 @@ module.exports = {
 
     // the shell to run when spawning a new session (i.e. /usr/local/bin/fish)
     // if left empty, your system's login shell will be used by default
-    shell: '',
+    shell: ''
 
     // for advanced config flags please refer to https://hyperterm.org/#cfg
   },
@@ -72,7 +73,9 @@ module.exports = {
   //   `@company/project`
   //   `project#1.0.1`
   plugins: [
-    'hyperterm-solarized-dark'
+    'hyperterm-solarized-light',
+    'hyperterm-solarized-dark',
+    'hyperterm-cobalt2-theme'
   ],
 
   // in development, you can create a directory under
